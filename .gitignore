@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+venv_linux/
+env/
+.env
+
+# Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Datasets (pesados)
+data/
+*.csv
+*.npy
+*.npz
+
+# OS generated files
+.DS_Store
+Thumbs.db
