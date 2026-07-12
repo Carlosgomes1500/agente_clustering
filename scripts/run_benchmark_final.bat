@@ -12,6 +12,6 @@ echo Este teste vai executar 45 combinações (9 datasets x 5 algoritmos)
 echo Tempo estimado: 15-30 minutos
 echo.
 pause
-python benchmark_simple.py
+python benchmarks\benchmark.py --mode all
 echo.
 pause
