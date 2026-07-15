@@ -6,8 +6,10 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from sklearn.datasets import fetch_openml
 from benchmarks.main import process_single_dataset
+from benchmarks.results import compile_results
 
 if __name__ == "__main__":
     print("Carregando dataset Ionosphere (OpenML)...")
     dataset = fetch_openml(name='ionosphere', version=1, as_frame='auto', parser='auto')
-    process_single_dataset(dataset.data.values, dataset.target.values, 'Ionosphere', fast_mode=False)
+    resultados = process_single_dataset(dataset.data.values, dataset.target.values, 'Ionosphere', fast_mode=True)
+    compile_results(resultados)
